@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/otimizacao/build",
+  "command": "C:/MinGW/bin/g++.exe   -O3 -DNDEBUG -o CMakeFiles/OTIMIZACAO.dir/src/main.cpp.obj -c C:/otimizacao/src/main.cpp",
+  "file": "C:/otimizacao/src/main.cpp",
+  "output": "CMakeFiles/OTIMIZACAO.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/otimizacao/build",
+  "command": "C:/MinGW/bin/g++.exe   -O3 -DNDEBUG -o CMakeFiles/OTIMIZACAO.dir/src/file/file.cpp.obj -c C:/otimizacao/src/file/file.cpp",
+  "file": "C:/otimizacao/src/file/file.cpp",
+  "output": "CMakeFiles/OTIMIZACAO.dir/src/file/file.cpp.obj"
+},
+{
+  "directory": "C:/otimizacao/build",
+  "command": "C:/MinGW/bin/g++.exe   -O3 -DNDEBUG -o CMakeFiles/OTIMIZACAO.dir/src/heuristica/SA.cpp.obj -c C:/otimizacao/src/heuristica/SA.cpp",
+  "file": "C:/otimizacao/src/heuristica/SA.cpp",
+  "output": "CMakeFiles/OTIMIZACAO.dir/src/heuristica/SA.cpp.obj"
+}
+]

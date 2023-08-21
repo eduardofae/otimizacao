@@ -1,0 +1,3 @@
+C:/otimizacao/build/CMakeFiles/OTIMIZACAO.dir
+C:/otimizacao/build/CMakeFiles/edit_cache.dir
+C:/otimizacao/build/CMakeFiles/rebuild_cache.dir

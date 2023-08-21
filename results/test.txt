@@ -1,0 +1,4 @@
+Para um N° de Iterações de: 0.9900000095
+O resultado do Simulated Annealing foi: 123065.43
+Com tempo de: 14085
+

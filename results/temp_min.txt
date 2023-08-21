@@ -1,0 +1,44 @@
+Para uma temperatura Mínima de: 100
+O resultado do Simulated Annealing foi: 250012
+Com tempo de: 11657
+
+Para uma temperatura Mínima de: 66
+O resultado do Simulated Annealing foi: 249995.1
+Com tempo de: 13573
+
+Para uma temperatura Mínima de: 44
+O resultado do Simulated Annealing foi: 250040.16
+Com tempo de: 14973
+
+Para uma temperatura Mínima de: 29
+O resultado do Simulated Annealing foi: 250007.37
+Com tempo de: 16922
+
+Para uma temperatura Mínima de: 19
+O resultado do Simulated Annealing foi: 250020.61
+Com tempo de: 19073
+
+Para uma temperatura Mínima de: 12
+O resultado do Simulated Annealing foi: 250021.81
+Com tempo de: 20815
+
+Para uma temperatura Mínima de: 8
+O resultado do Simulated Annealing foi: 250018.42
+Com tempo de: 22885
+
+Para uma temperatura Mínima de: 5
+O resultado do Simulated Annealing foi: 249955.26
+Com tempo de: 25230
+
+Para uma temperatura Mínima de: 3
+O resultado do Simulated Annealing foi: 250035.18
+Com tempo de: 27741
+
+Para uma temperatura Mínima de: 2
+O resultado do Simulated Annealing foi: 250023.34
+Com tempo de: 29712
+
+Para uma temperatura Mínima de: 1
+O resultado do Simulated Annealing foi: 250032.93
+Com tempo de: 33047
+

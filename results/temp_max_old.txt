@@ -1,0 +1,48 @@
+Para uma temperatura máxima de: 10000
+O resultado do Simulated Annealing foi: 295625
+Com tempo de: 38
+
+Para uma temperatura máxima de: 6666.67
+O resultado do Simulated Annealing foi: 294258
+Com tempo de: 37
+
+Para uma temperatura máxima de: 4444.44
+O resultado do Simulated Annealing foi: 296852
+Com tempo de: 34
+
+Para uma temperatura máxima de: 2962.96
+O resultado do Simulated Annealing foi: 291582
+Com tempo de: 33
+
+Para uma temperatura máxima de: 1975.31
+O resultado do Simulated Annealing foi: 287489
+Com tempo de: 32
+
+Para uma temperatura máxima de: 1316.87
+O resultado do Simulated Annealing foi: 289764
+Com tempo de: 30
+
+Para uma temperatura máxima de: 877.915
+O resultado do Simulated Annealing foi: 286287
+Com tempo de: 27
+
+Para uma temperatura máxima de: 585.277
+O resultado do Simulated Annealing foi: 286971
+Com tempo de: 28
+
+Para uma temperatura máxima de: 390.184
+O resultado do Simulated Annealing foi: 292290
+Com tempo de: 28
+
+Para uma temperatura máxima de: 260.123
+O resultado do Simulated Annealing foi: 294136
+Com tempo de: 23
+
+Para uma temperatura máxima de: 173.415
+O resultado do Simulated Annealing foi: 311490
+Com tempo de: 24
+
+Para uma temperatura máxima de: 115.61
+O resultado do Simulated Annealing foi: 315653
+Com tempo de: 22
+

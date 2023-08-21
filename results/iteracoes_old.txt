@@ -1,0 +1,60 @@
+Para um número de iterações de: 1000
+O resultado do Simulated Annealing foi: 290671
+Com tempo de: 20498
+
+Para um número de iterações de: 666
+O resultado do Simulated Annealing foi: 288096
+Com tempo de: 14393
+
+Para um número de iterações de: 444
+O resultado do Simulated Annealing foi: 288832
+Com tempo de: 9635
+
+Para um número de iterações de: 296
+O resultado do Simulated Annealing foi: 289339
+Com tempo de: 6723
+
+Para um número de iterações de: 197
+O resultado do Simulated Annealing foi: 292008
+Com tempo de: 4809
+
+Para um número de iterações de: 131
+O resultado do Simulated Annealing foi: 292596
+Com tempo de: 3487
+
+Para um número de iterações de: 87
+O resultado do Simulated Annealing foi: 294883
+Com tempo de: 2714
+
+Para um número de iterações de: 58
+O resultado do Simulated Annealing foi: 299722
+Com tempo de: 2041
+
+Para um número de iterações de: 38
+O resultado do Simulated Annealing foi: 299545
+Com tempo de: 1483
+
+Para um número de iterações de: 25
+O resultado do Simulated Annealing foi: 301771
+Com tempo de: 1162
+
+Para um número de iterações de: 16
+O resultado do Simulated Annealing foi: 307920
+Com tempo de: 1063
+
+Para um número de iterações de: 10
+O resultado do Simulated Annealing foi: 320624
+Com tempo de: 643
+
+Para um número de iterações de: 6
+O resultado do Simulated Annealing foi: 324938
+Com tempo de: 482
+
+Para um número de iterações de: 4
+O resultado do Simulated Annealing foi: 328413
+Com tempo de: 451
+
+Para um número de iterações de: 2
+O resultado do Simulated Annealing foi: 339510
+Com tempo de: 365
+

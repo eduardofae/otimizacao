@@ -1,0 +1,40 @@
+Para uma Taxa de Resfriamento de: 0.99
+O resultado do Simulated Annealing foi: 290671
+Com tempo de: 20575
+
+Para uma Taxa de Resfriamento de: 0.98
+O resultado do Simulated Annealing foi: 288398
+Com tempo de: 10635
+
+Para uma Taxa de Resfriamento de: 0.97
+O resultado do Simulated Annealing foi: 289939
+Com tempo de: 7888
+
+Para uma Taxa de Resfriamento de: 0.96
+O resultado do Simulated Annealing foi: 289762
+Com tempo de: 5826
+
+Para uma Taxa de Resfriamento de: 0.95
+O resultado do Simulated Annealing foi: 291779
+Com tempo de: 4645
+
+Para uma Taxa de Resfriamento de: 0.94
+O resultado do Simulated Annealing foi: 288561
+Com tempo de: 4064
+
+Para uma Taxa de Resfriamento de: 0.93
+O resultado do Simulated Annealing foi: 293214
+Com tempo de: 3651
+
+Para uma Taxa de Resfriamento de: 0.92
+O resultado do Simulated Annealing foi: 292999
+Com tempo de: 3389
+
+Para uma Taxa de Resfriamento de: 0.91
+O resultado do Simulated Annealing foi: 292454
+Com tempo de: 2969
+
+Para uma Taxa de Resfriamento de: 0.9
+O resultado do Simulated Annealing foi: 298125
+Com tempo de: 2526
+
