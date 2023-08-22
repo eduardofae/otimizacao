@@ -24,11 +24,30 @@ Graph File::readFile(const char *filename){
     return info;
 }
 
-void File::writeFile(const char *filename, const std::vector <double> solution, const std::vector <float> time, const std::vector <float> temp){
+void File::writeFile(const char *filename, const std::vector <double> solution, const std::vector <float> time, 
+                     const std::vector <float> variable, const std::vector <unsigned int> seeds, int iteracoes){
     std::ofstream file(filename);
 
-    for(int i = 0; i < solution.size(); i++)
-        file << std::setprecision(10) << "Para um N° de Iterações de: " << temp.at(i) << "\nO resultado do Simulated Annealing foi: " << solution.at(i) << "\nCom tempo de: " << time.at(i) << "\n\n";
+    file << std::setprecision(10) << "Solução Inicial: " << solution.at(0) << "\nSeed Inicial: " << seeds.at(0) << "\n\n";
+
+    if(solution.size() == 2){
+        for(int i = 1; i < solution.size(); i++){
+            file << "\nO resultado médio do Simulated Annealing foi: " << solution.at(i) << "\nCom tempo médio de: " << time.at(i-1) << "\nSeeds Utilizadas: ";
+            for(int j = 0; j < iteracoes; j++){
+                file << seeds.at((i-1)*iteracoes+j+1) << " ";
+            }
+            file << "\n\n";
+        }
+    }
+    else{
+        for(int i = 1; i < solution.size(); i++){
+            file << std::setprecision(10) << "Para o valor da variável: " << variable.at(i-1) << "\nO resultado médio do Simulated Annealing foi: " << solution.at(i) << "\nCom tempo médio de: " << time.at(i-1) << "\nSeeds Utilizadas: ";
+            for(int j = 0; j < iteracoes; j++){
+                file << seeds.at((i-1)*iteracoes+j+1) << " ";
+            }
+            file << "\n\n";
+        }
+    }
 
     file.close();
 }

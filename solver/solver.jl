@@ -33,13 +33,12 @@ open("../cmb/cmb01") do file
   @variable(m, C[k in K, i in N], Bin);
   @objective(m, Min, sum(C[1, i] * W[i] for i in N))
 
-  @constraint(m, [k in K, i in N, j in N], C[k,i] + C[k,j] <= 2 - E[i,j]);
+  @constraint(m, [[i,j] in (E[i,j] == 1), k in K], C[k,i] + C[k,j] <= 1);
 
   @constraint(m, [i in N], sum(C[k,i] for k in K) == 1);
 
   @constraint(m, [k in K], sum(C[1,i] * W[i] for i in N) .>= sum(C[k,i] * W[i] for i in N));
 
-  # println(m)
   optimize!(m)
 
   println(objective_value(m))

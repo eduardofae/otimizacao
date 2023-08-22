@@ -1,0 +1,8 @@
+Solução Inicial: 169863
+Seed Inicial: 1692661569
+
+Para o valor da variável: 0.9900000095
+O resultado médio do Simulated Annealing foi: 101170.255
+Com tempo médio de: 1.738700151
+Seeds Utilizadas: 1692661569Seeds Utilizadas: 1692661571Seeds Utilizadas: 1692661573Seeds Utilizadas: 1692661575Seeds Utilizadas: 1692661576Seeds Utilizadas: 1692661578Seeds Utilizadas: 1692661580Seeds Utilizadas: 1692661582Seeds Utilizadas: 1692661583Seeds Utilizadas: 1692661585
+

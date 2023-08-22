@@ -4,6 +4,7 @@
 #include <cmath>
 #include <random>
 #include <algorithm>
+#include <ctime>
 
 struct Solution {
     std::vector <int> vertex;
@@ -24,23 +25,25 @@ struct Solution {
 
 class SA {
     public:
-        SA(std::vector <std::vector <bool>> &edges, std::vector <double> &weights, int k);
+        SA(std::vector <std::vector <bool>> &edges, std::vector <double> &weights, int k, unsigned int seed);
         Solution start(float t_max, float t_min, float r, int I);
         void testSolution(Solution solution);
+        void refreshSeed(unsigned int seed);
+        Solution getInitialSolution();
     private:
         Solution bestSolution;
         Solution curSolution;
+        Solution initialSolution;
         std::vector <std::vector <bool>> edges;
         std::vector <double> weights;
         int colors;
+        unsigned int seed;
 
-        Solution initialSolution;
-
-        void getInitialSolution();
+        void calculateInitialSolution();
         Solution getNewSolution(int I);
         std::vector <int> getConnections();
         void getValue(Solution *solution);
-        void parseNoneColor();
+        void treatNoneColor();
 
         void printSolution();
 };

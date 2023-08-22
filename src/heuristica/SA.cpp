@@ -1,17 +1,18 @@
 #include "./SA.hpp"
 
-SA::SA(std::vector <std::vector <bool>> &edges, std::vector <double> &weights, int k) {
+SA::SA(std::vector <std::vector <bool>> &edges, std::vector <double> &weights, int k, unsigned int seed) {
     this->bestSolution = Solution(weights.size(), k);
     this->curSolution  = Solution(weights.size(), k);
     this->edges = edges;
     this->weights = weights;
     this->colors = k;
     this->initialSolution = Solution(weights.size(), k);
-    getInitialSolution();
+    this->seed = seed;
+    calculateInitialSolution();
     testSolution(this->initialSolution);
 }
 
-void SA::getInitialSolution() {
+void SA::calculateInitialSolution() {
     std::vector <int> connections = getConnections();
     for(int color = 0; color < colors; color++){
         int vertex = -1, max = -1;
@@ -70,7 +71,7 @@ void SA::getInitialSolution() {
             } 
         }
     }
-    parseNoneColor();
+    treatNoneColor();
     getValue(&this->initialSolution);
 }
 
@@ -89,7 +90,7 @@ Solution SA::start(float t_max, float t_min, float r, int I) {
                 this->curSolution = newSolution;
                 if(newSolution.value < bestSolution.value){
                     this->bestSolution = newSolution;
-                    std::cout << "Temperature: " << t << "\nValue: " << bestSolution.value << "\n\n";
+                    //std::cout << "Temperature: " << t << "\nValue: " << bestSolution.value << "\n\n";
                 }
             }
             else{
@@ -101,8 +102,6 @@ Solution SA::start(float t_max, float t_min, float r, int I) {
     }
 
     // printSolution();
-
-    std::cout << "Initial Value: " << initialSolution.value << "\n\n";
 
     return this->bestSolution;
 }
@@ -186,13 +185,13 @@ Solution SA::getNewSolution(int I){
 }
 
 void SA::printSolution(){
-    // std::cout << "Vertices: ";
-    // for(int i = 0; i < weights.size(); i++)
-    //     std::cout << i << " ";
-    // std::cout << std::endl << "Pesos:    ";
-    // for(int i = 0; i < weights.size(); i++)
-    //     std::cout << weights.at(i) << std::endl;
-    // std::cout << std::endl << "Cores:    ";
+    std::cout << "Vertices: ";
+    for(int i = 0; i < weights.size(); i++)
+        std::cout << i << " ";
+    std::cout << std::endl << "Pesos:    ";
+    for(int i = 0; i < weights.size(); i++)
+        std::cout << weights.at(i) << " ";
+    std::cout << std::endl << "Cores:    ";
     for(int color = 0; color < colors; color++){
         std::cout << color << ": { ";
         for(auto &c : bestSolution.colors.at(bestSolution.color))
@@ -250,7 +249,9 @@ void SA::getValue(Solution *solution){
     }
 }
 
-void SA::parseNoneColor(){
+void SA::treatNoneColor(){
+    std::srand(this->seed);
+
     std::vector <int> colors, vertices;
     for(int i = 0; i < this->colors; i++){
         colors.emplace_back(i);
@@ -302,11 +303,20 @@ void SA::parseNoneColor(){
                 int c = initialSolution.vertex[lastVert]; 
                 initialSolution.vertex[lastVert] = -1;
                 initialSolution.colors[c].erase(std::remove(initialSolution.colors[c].begin(), initialSolution.colors[c].end(), lastVert), initialSolution.colors[c].end());
-                
-                initialSolution.vertex[vertex] = c;
-                initialSolution.colors[c].emplace_back(vertex);
+
+                std::random_shuffle(colors.begin(), colors.end());
+                std::random_shuffle(vertices.begin(), vertices.end());
+
                 vertex = -1;
             }
         }
     }
+}
+
+void SA::refreshSeed(unsigned int seed){
+    this->seed = seed;
+}
+
+Solution SA::getInitialSolution(){
+    return this->initialSolution;
 }

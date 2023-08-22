@@ -290,7 +290,9 @@ CMakeFiles/OTIMIZACAO.dir/src/heuristica/SA.cpp.obj: C:/otimizacao/src/heuristic
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_algo.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/algorithmfwd.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_heap.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_tempbuf.h
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_tempbuf.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime \
+  C:/MinGW/include/time.h
 
 CMakeFiles/OTIMIZACAO.dir/src/main.cpp.obj: C:/otimizacao/src/main.cpp \
   C:/otimizacao/src/file/file.hpp \
